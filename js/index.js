@@ -36,3 +36,24 @@
 //         slide('next');
 //     });
 // });
+
+const list = [
+  { leave: "./images/instagram_ot.png", over: "./images/youtube_ot.png" },
+  { leave: "./images/facebook_ot.png", over: "./images/youtube_ot.png" },
+  { leave: "./images/blog_ot.png", over: "./images/youtube_ot.png" },
+  { leave: "./images/youtube_ot.png", over: "./images/instagram_ot.png" },
+];
+
+const li = document.querySelectorAll(".sns_wrap > li");
+
+const hover = (e) => {
+  const i = [...li]?.findIndex((x) => x === e?.currentTarget);
+  const imgEl = e?.currentTarget.children[0].children[0];
+  const img = e?.type === "mouseover" ? list[i].over : list[i].leave;
+  imgEl.setAttribute("src", img);
+};
+
+li.forEach((x) => {
+  x.addEventListener("mouseover", hover);
+  x.addEventListener("mouseleave", hover);
+});
