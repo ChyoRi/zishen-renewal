@@ -112,7 +112,7 @@ nav {
 /* 768 */
 @media (max-width: 768px) {
   html {
-    font-size: 45%;
+    font-size: 42.5%;
   }
 }
 /* 480 */
@@ -275,4 +275,4 @@ nav {
 .event_img,
 .man_lookbook_img {
   margin-top: 3%;
-}/*# sourceMappingURL=style.css.map */
+}
