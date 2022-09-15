@@ -1,12 +1,12 @@
-// $(document).ready(function(){
+$(document).ready(function(){
 
-//     // Drop Down Menu
+    // Drop Down Menu
 
-//     $('.main_list_wrap > li').hover(function(){
-//         $('.sub_list_wrap, .sub_menu_bg').stop().slideDown();
-//     },function() {
-//         $('.sub_list_wrap, .sub_menu_bg').stop().slideUp();
-//     });
+    $('.main_list_wrap > li').hover(function(){
+        $('.sub_list_wrap, .sub_menu_bg').stop().slideDown();
+    },function() {
+        $('.sub_list_wrap, .sub_menu_bg').stop().slideUp();
+    });
 
 //     // slide
 
@@ -35,7 +35,7 @@
 //     slideNextBtn.click(()=> {
 //         slide('next');
 //     });
-// });
+});
 
 const list = [
   { leave: "./images/instagram_ot.png", over: "./images/youtube_ot.png" },
