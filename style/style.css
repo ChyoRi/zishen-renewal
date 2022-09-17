@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: inherit;`
 }
 
 button {
@@ -42,10 +42,14 @@ button {
 }
 
 .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 13.3rem;
   height: 4.3rem;
-  padding-top: calc(10.5rem / 2 - 4.3rem / 2);
-  margin: 0 auto;
+  /* padding-top: calc(10.5rem / 2 - 4.3rem / 2); */
+  transform: translate(-50%);
+  
 }
 
 .logo > a, .logo > a > img {
@@ -93,6 +97,7 @@ button {
 .main_list_wrap > li {
   position: relative;
   float: left;
+  width: calc(100% / 6);
   text-align: center;
 }
 
@@ -100,7 +105,6 @@ button {
   display: block;
   height: 5rem;
   line-height: 5rem;
-  padding: 0 5.325rem;
   font-size: 1.3rem;
   white-space: nowrap;
 }
@@ -230,21 +234,31 @@ button {
   height: 100%;
 }
 
+.more_video_wrap > li > a.women_video_img,
+.more_video_wrap > li > a.man_video_img{
+  width: 67.647%
+}
+
+.more_video_wrap > li > a.text_img {
+  width: 32.353%
+}
+
 .more_video_wrap > li > a > img {
   display: block;
   max-width: 100%;
 }
 
 .lookbook_wrap {
-  margin-top: 3rem;
+  margin-top: 2.941%;
 }
 
 .lookbook_wrap > li {
   float: left;
+  width: 48.5295%;
 }
 
 .lookbook_wrap > li:first-of-type {
-  margin-right: 3rem;
+  margin-right: 2.941%;
 }
 
 .lookbook_wrap > li > a {
@@ -254,9 +268,10 @@ button {
 
 .lookbook_wrap > li > .women_lookbook_img,
 .lookbook_wrap > li > .event_img {
-  margin-bottom: 3rem;
+  margin-bottom: 2.941%;
 }
 
 .lookbook_wrap > li > a > img {
   display: block;
+  max-width: 100%;
 }
