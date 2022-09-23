@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* TEST */
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 html {
@@ -61,7 +61,6 @@ button {
 
 .sns_wrap {
   left: 0;
-  white-space: nowrap;
 }
 
 .sns_wrap > li {
@@ -69,22 +68,19 @@ button {
   margin-right: 3px;
 }
 
-.sns_wrap > li > a {
+.sns_wrap > li > a,
+.eshop > a {
   display: block;
 }
 
-.sns_wrap > li > a > img {
+.sns_wrap > li > a > img,
+.eshop > a > img  {
   vertical-align: top;
 }
 
 .eshop {
   right: 0;
 }
-
-.eshop > a,  .eshop > a > img {
-  display: block;
-}
-
 
 /* 네비 영역 */
 
