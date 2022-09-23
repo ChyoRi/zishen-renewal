@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* TEST */
+
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 
 html {
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit;`
+  color: inherit;
 }
 
 button {
